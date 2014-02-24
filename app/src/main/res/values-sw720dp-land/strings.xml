@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><string name="toggleButtonOn">Driving</string><string name="toggleButtonOff">Start</string><string name="fuelCost">Fuel Cost/l</string><string name="fuelConsumption">Fuel Consumption/10km</string><string name="passengers">Passengers</string><string name="liter">/l</string><string name="tenKm">/10km</string></resources>

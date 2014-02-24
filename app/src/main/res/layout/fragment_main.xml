@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.74"
+        android:id="@+id/myFragMain"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_weight="0.24">
+
+        <ToggleButton
+            android:layout_width="171dp"
+            android:layout_height="146dp"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textOn="@string/toggleButtonOn"
+            android:textOff="@string/toggleButtonOff"
+            android:checked="false"
+            android:enabled="true" />
+    </FrameLayout>
+
+</LinearLayout>

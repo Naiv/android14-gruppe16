@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/passengers"
+        android:textSize="25dp"
+        android:id="@+id/pass"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/fuelCon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/fuelCost"
+        android:textSize="25dp"
+        android:id="@+id/fuelCost"
+        android:textColor="@color/textColor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/liter"
+        android:textSize="18dp"
+        android:id="@+id/fuelCostNot"
+        android:layout_gravity="right"
+        android:textColor="@color/textColor"
+        android:layout_toRightOf="@+id/fuelCostPrice"
+        android:layout_alignBottom="@+id/fuelCostPrice"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tenKm"
+        android:gravity="left"
+        android:textSize="18dp"
+        android:id="@+id/fuelConNot"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/textColor"
+        android:layout_alignBottom="@+id/fuelConPrice"
+        android:layout_toRightOf="@+id/fuelConPrice"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:selectAllOnFocus="true"
+        android:textSize="20dp"
+        android:gravity="center|right"
+        android:id="@+id/fuelCostPrice"
+        android:layout_gravity="right"
+        android:background="@color/formColor"
+        android:text="14.45"
+        android:layout_marginLeft="55dp"
+        android:layout_alignTop="@+id/fuelCost"
+        android:layout_toRightOf="@+id/fuelCost" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:selectAllOnFocus="true"
+        android:textSize="20dp"
+        android:gravity="center|right"
+        android:id="@+id/fuelConPrice"
+        android:background="@color/formColor"
+        android:text="0.78"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/fuelCon"
+        android:layout_alignLeft="@+id/fuelCostPrice"
+        android:layout_toRightOf="@+id/fuelCon" />
+
+    <TextView
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/fuelConsumption"
+        android:textSize="22dp"
+        android:id="@+id/fuelCon"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/fuelCost"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:inputType="number"
+        android:ems="10"
+        android:selectAllOnFocus="true"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/passNum"
+        android:layout_gravity="right"
+        android:background="@color/formColor"
+        android:text="1"
+        android:layout_alignTop="@+id/pass"
+        android:layout_alignLeft="@+id/fuelConPrice"
+        android:layout_toRightOf="@+id/pass" />
+</RelativeLayout>

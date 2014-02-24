@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/C:/Users/Kristian/AndroidStudioProjects/Bensinkalkulator/app/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="backgroundcolor">#282828</color>
+    <color name="formColor">#ffffff</color>
+    <color name="textColor">#ffffff</color>
+    <!-- From: file:/C:/Users/Kristian/AndroidStudioProjects/Bensinkalkulator/app/src/main/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/C:/Users/Kristian/AndroidStudioProjects/Bensinkalkulator/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="app_name">Fuel Calculator</string>
+    <string name="fuelConsumption">Consumption</string>
+    <string name="fuelCost">Fuel Cost</string>
+    <string name="liter">/l</string>
+    <string name="passengers">Passengers</string>
+    <string name="tenKm">/10km</string>
+    <string name="toggleButtonOff">Start</string>
+    <string name="toggleButtonOn">Driving</string>
+    <!-- From: file:/C:/Users/Kristian/AndroidStudioProjects/Bensinkalkulator/app/src/main/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>
