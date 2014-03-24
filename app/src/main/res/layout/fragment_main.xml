@@ -28,6 +28,22 @@
             android:textOff="@string/toggleButtonOff"
             android:checked="false"
             android:enabled="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addDummy"
+            android:text="Add"
+            android:id="@+id/buttonDummy"
+            android:layout_gravity="right|bottom" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="removeAll"
+            android:text="Truncate"
+            android:id="@+id/button"
+            android:layout_gravity="left|bottom" />
     </FrameLayout>
 
 </LinearLayout>

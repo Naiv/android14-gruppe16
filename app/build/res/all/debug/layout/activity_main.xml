@@ -17,4 +17,4 @@
         android:layout_alignParentEnd="true"
         android:id="@+id/myFrag"></FrameLayout>
 </RelativeLayout>
-<!-- From: file:/C:/Users/Kristian/AndroidStudioProjects/Bensinkalkulator/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/layout/activity_main.xml -->

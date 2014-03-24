@@ -115,4 +115,4 @@
         android:layout_alignTop="@+id/pass"
         android:layout_alignLeft="@+id/fuelConPrice"
         android:layout_toRightOf="@+id/pass" />
-</RelativeLayout><!-- From: file:/C:/Users/Kristian/AndroidStudioProjects/Bensinkalkulator/app/src/main/res/layout/fragment_main_new.xml -->
+</RelativeLayout><!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/layout/fragment_main_new.xml -->

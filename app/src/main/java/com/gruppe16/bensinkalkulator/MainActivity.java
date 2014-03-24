@@ -1,12 +1,12 @@
 package com.gruppe16.bensinkalkulator;
 
-import android.os.Bundle;
-import android.app.Activity;
 import android.app.ActionBar;
-import android.app.FragmentTransaction;
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.view.Menu;
+import android.app.FragmentTransaction;
+import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends Activity {
 
@@ -52,5 +52,18 @@ public class MainActivity extends Activity {
         actionBar.addTab(actionBar.newTab().setText("Drive").setTabListener(tabListener));
         actionBar.addTab(actionBar.newTab().setText("Log").setTabListener(tabListener));
 	}
-
+    public void addDummy(View view) {
+        TripsDataSource datasource;
+        datasource = new TripsDataSource(this);
+        datasource.open();
+        @SuppressWarnings("unchecked")
+        String trip = new String("23.08.1991 kl 14:02 - 23km - 202kr");
+        datasource.createTrip(trip);
+    }
+    public void removeAll(View view) {
+        TripsDataSource datasource;
+        datasource = new TripsDataSource(this);
+        datasource.open();
+        datasource.deleteAll();
+    }
 }

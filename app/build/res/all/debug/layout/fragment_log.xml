@@ -6,11 +6,10 @@
     android:background="@color/backgroundcolor">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/listText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Log"
-        android:id="@+id/textView"
-        android:layout_gravity="center_horizontal"
-        android:textColor="@color/textColor" />
-</LinearLayout><!-- From: file:/C:/Users/Kristian/AndroidStudioProjects/Bensinkalkulator/app/src/main/res/layout/fragment_log.xml -->
+        android:textColor="@color/textColor"
+        android:textSize="18dp"
+        android:text="23.08.1991 kl 14:02 - 23km - 202kr" />
+</LinearLayout><!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/layout/fragment_log.xml -->

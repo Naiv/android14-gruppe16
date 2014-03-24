@@ -2,34 +2,64 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res" >
+        <source path="D:\Projects\bensinkalkulator\app\src\main\res" >
             <file
                 name="ic_launcher"
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\drawable-hdpi\ic_launcher.png"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\drawable-hdpi\ic_launcher.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\drawable-mdpi\ic_launcher.png"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\drawable-mdpi\ic_launcher.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\drawable-xhdpi\ic_launcher.png"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\drawable-xhdpi\ic_launcher.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\drawable-xxhdpi\ic_launcher.png"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\drawable-xxhdpi\ic_launcher.png"
                 qualifiers="xxhdpi"
                 type="drawable" />
             <file
                 name="activity_main"
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\layout\activity_main.xml"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\layout\activity_main.xml"
                 qualifiers=""
                 type="layout" />
             <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values\dimens.xml"
+                name="fragment_log"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\layout\fragment_log.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_main"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\layout\fragment_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_main_new"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\layout\fragment_main_new.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_main_track"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\layout\fragment_main_track.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values\colors.xml"
+                qualifiers="" >
+                <color name="backgroundcolor" >#282828
+                </color>
+                <color name="textColor" >#ffffff
+                </color>
+                <color name="formColor" >#ffffff
+                </color>
+            </file>
+            <file
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values\dimens.xml"
                 qualifiers="" >
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
@@ -37,13 +67,13 @@
                 </dimen>
             </file>
             <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values\strings.xml"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values\strings.xml"
                 qualifiers="" >
                 <string name="fuelCost" >Fuel Cost
                 </string>
-                <string name="tenKm" >/10km
-                </string>
                 <string name="fuelConsumption" >Consumption
+                </string>
+                <string name="tenKm" >/10km
                 </string>
                 <string name="toggleButtonOff" >Start
                 </string>
@@ -57,7 +87,7 @@
                 </string>
             </file>
             <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values\styles.xml"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values\styles.xml"
                 qualifiers="" >
 
                 <style
@@ -79,13 +109,101 @@
                 </style>
             </file>
             <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values-sw720dp-land\dimens.xml"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values-sw600dp\colors.xml"
+                qualifiers="sw600dp" >
+                <color name="textColor" >#ffffff
+                </color>
+                <color name="backgroundcolor" >#282828
+                </color>
+                <color name="formColor" >#ffffff
+                </color>
+            </file>
+            <file
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values-sw600dp\strings.xml"
+                qualifiers="sw600dp" >
+                <string name="app_name" >Fuel Calculator
+                </string>
+                <string name="tenKm" >/10km
+                </string>
+                <string name="liter" >/l
+                </string>
+                <string name="fuelCost" >Fuel Cost
+                </string>
+                <string name="toggleButtonOff" >Start
+                </string>
+                <string name="passengers" >Passengers
+                </string>
+                <string name="toggleButtonOn" >Driving
+                </string>
+                <string name="fuelConsumption" >Consumption
+                </string>
+            </file>
+            <file
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values-sw720dp-land\colors.xml"
+                qualifiers="sw720dp-land" >
+                <color name="backgroundcolor" >#282828
+                </color>
+                <color name="textColor" >#ffffff
+                </color>
+                <color name="formColor" >#ffffff
+                </color>
+            </file>
+            <file
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values-sw720dp-land\dimens.xml"
                 qualifiers="sw720dp-land" >
                 <dimen name="activity_horizontal_margin" >128dp
                 </dimen>
             </file>
             <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values-v11\styles.xml"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values-sw720dp-land\strings.xml"
+                qualifiers="sw720dp-land" >
+                <string name="tenKm" >/10km
+                </string>
+                <string name="passengers" >Passengers
+                </string>
+                <string name="toggleButtonOn" >Driving
+                </string>
+                <string name="fuelCost" >Fuel Cost/l
+                </string>
+                <string name="liter" >/l
+                </string>
+                <string name="toggleButtonOff" >Start
+                </string>
+                <string name="fuelConsumption" >Fuel Consumption/10km
+                </string>
+            </file>
+            <file
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values-v11\colors.xml"
+                qualifiers="v11" >
+                <color name="backgroundcolor" >#282828
+                </color>
+                <color name="formColor" >#ffffff
+                </color>
+                <color name="textColor" >#ffffff
+                </color>
+            </file>
+            <file
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values-v11\strings.xml"
+                qualifiers="v11" >
+                <string name="fuelConsumption" >Consumption
+                </string>
+                <string name="tenKm" >/10km
+                </string>
+                <string name="app_name" >Fuel Calculator
+                </string>
+                <string name="toggleButtonOn" >Driving
+                </string>
+                <string name="toggleButtonOff" >Start
+                </string>
+                <string name="liter" >/l
+                </string>
+                <string name="fuelCost" >Fuel Cost
+                </string>
+                <string name="passengers" >Passengers
+                </string>
+            </file>
+            <file
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values-v11\styles.xml"
                 qualifiers="v11" >
 
                 <style
@@ -96,7 +214,37 @@
                 </style>
             </file>
             <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values-v14\styles.xml"
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values-v14\colors.xml"
+                qualifiers="v14" >
+                <color name="backgroundcolor" >#282828
+                </color>
+                <color name="formColor" >#ffffff
+                </color>
+                <color name="textColor" >#ffffff
+                </color>
+            </file>
+            <file
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values-v14\strings.xml"
+                qualifiers="v14" >
+                <string name="toggleButtonOff" >Start
+                </string>
+                <string name="liter" >/l
+                </string>
+                <string name="fuelConsumption" >Consumption
+                </string>
+                <string name="passengers" >Passengers
+                </string>
+                <string name="toggleButtonOn" >Driving
+                </string>
+                <string name="fuelCost" >Fuel Cost
+                </string>
+                <string name="tenKm" >/10km
+                </string>
+                <string name="app_name" >Fuel Calculator
+                </string>
+            </file>
+            <file
+                path="D:\Projects\bensinkalkulator\app\src\main\res\values-v14\styles.xml"
                 qualifiers="v14" >
 
                 <style
@@ -106,159 +254,12 @@
                     <!-- API 14 theme customizations can go here. -->
                 </style>
             </file>
-            <file
-                name="fragment_log"
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\layout\fragment_log.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="fragment_main"
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\layout\fragment_main.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values-v11\colors.xml"
-                qualifiers="v11" >
-                <color name="backgroundcolor" >#282828
-                </color>
-                <color name="formColor" >#ffffff
-                </color>
-                <color name="textColor" >#ffffff
-                </color>
-            </file>
-            <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values-sw720dp-land\colors.xml"
-                qualifiers="sw720dp-land" >
-                <color name="backgroundcolor" >#282828
-                </color>
-                <color name="textColor" >#ffffff
-                </color>
-                <color name="formColor" >#ffffff
-                </color>
-            </file>
-            <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values-v14\colors.xml"
-                qualifiers="v14" >
-                <color name="backgroundcolor" >#282828
-                </color>
-                <color name="formColor" >#ffffff
-                </color>
-                <color name="textColor" >#ffffff
-                </color>
-            </file>
-            <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values\colors.xml"
-                qualifiers="" >
-                <color name="backgroundcolor" >#282828
-                </color>
-                <color name="textColor" >#ffffff
-                </color>
-                <color name="formColor" >#ffffff
-                </color>
-            </file>
-            <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values-sw600dp\colors.xml"
-                qualifiers="sw600dp" >
-                <color name="textColor" >#ffffff
-                </color>
-                <color name="backgroundcolor" >#282828
-                </color>
-                <color name="formColor" >#ffffff
-                </color>
-            </file>
-            <file
-                name="fragment_main_new"
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\layout\fragment_main_new.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="fragment_main_track"
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\layout\fragment_main_track.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values-v14\strings.xml"
-                qualifiers="v14" >
-                <string name="toggleButtonOff" >Start
-                </string>
-                <string name="liter" >/l
-                </string>
-                <string name="passengers" >Passengers
-                </string>
-                <string name="fuelConsumption" >Consumption
-                </string>
-                <string name="toggleButtonOn" >Driving
-                </string>
-                <string name="fuelCost" >Fuel Cost
-                </string>
-                <string name="tenKm" >/10km
-                </string>
-                <string name="app_name" >Fuel Calculator
-                </string>
-            </file>
-            <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values-v11\strings.xml"
-                qualifiers="v11" >
-                <string name="fuelConsumption" >Consumption
-                </string>
-                <string name="tenKm" >/10km
-                </string>
-                <string name="toggleButtonOn" >Driving
-                </string>
-                <string name="app_name" >Fuel Calculator
-                </string>
-                <string name="toggleButtonOff" >Start
-                </string>
-                <string name="liter" >/l
-                </string>
-                <string name="passengers" >Passengers
-                </string>
-                <string name="fuelCost" >Fuel Cost
-                </string>
-            </file>
-            <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values-sw600dp\strings.xml"
-                qualifiers="sw600dp" >
-                <string name="app_name" >Fuel Calculator
-                </string>
-                <string name="tenKm" >/10km
-                </string>
-                <string name="liter" >/l
-                </string>
-                <string name="fuelCost" >Fuel Cost
-                </string>
-                <string name="toggleButtonOff" >Start
-                </string>
-                <string name="passengers" >Passengers
-                </string>
-                <string name="toggleButtonOn" >Driving
-                </string>
-                <string name="fuelConsumption" >Consumption
-                </string>
-            </file>
-            <file
-                path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\main\res\values-sw720dp-land\strings.xml"
-                qualifiers="sw720dp-land" >
-                <string name="tenKm" >/10km
-                </string>
-                <string name="passengers" >Passengers
-                </string>
-                <string name="toggleButtonOn" >Driving
-                </string>
-                <string name="liter" >/l
-                </string>
-                <string name="fuelCost" >Fuel Cost/l
-                </string>
-                <string name="toggleButtonOff" >Start
-                </string>
-                <string name="fuelConsumption" >Fuel Consumption/10km
-                </string>
-            </file>
         </source>
-        <source path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\build\res\rs\debug" />
+        <source path="D:\Projects\bensinkalkulator\app\build\res\rs\debug" />
+        <source path="D:\Projects\bensinkalkulator\app\build\res\generated\debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="C:\Users\Kristian\AndroidStudioProjects\Bensinkalkulator\app\src\debug\res" />
+        <source path="D:\Projects\bensinkalkulator\app\src\debug\res" />
     </dataSet>
 
 </merger>

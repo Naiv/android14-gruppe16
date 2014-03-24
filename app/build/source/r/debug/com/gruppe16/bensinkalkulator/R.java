@@ -23,17 +23,19 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int fuelCon=0x7f080005;
-        public static final int fuelConNot=0x7f080009;
-        public static final int fuelConPrice=0x7f08000a;
-        public static final int fuelCost=0x7f080006;
-        public static final int fuelCostNot=0x7f080007;
-        public static final int fuelCostPrice=0x7f080008;
+        public static final int button=0x7f080005;
+        public static final int buttonDummy=0x7f080004;
+        public static final int fuelCon=0x7f080007;
+        public static final int fuelConNot=0x7f08000b;
+        public static final int fuelConPrice=0x7f08000c;
+        public static final int fuelCost=0x7f080008;
+        public static final int fuelCostNot=0x7f080009;
+        public static final int fuelCostPrice=0x7f08000a;
+        public static final int listText=0x7f080001;
         public static final int myFrag=0x7f080000;
         public static final int myFragMain=0x7f080002;
-        public static final int pass=0x7f080004;
-        public static final int passNum=0x7f08000b;
-        public static final int textView=0x7f080001;
+        public static final int pass=0x7f080006;
+        public static final int passNum=0x7f08000d;
         public static final int toggleButton=0x7f080003;
     }
     public static final class layout {

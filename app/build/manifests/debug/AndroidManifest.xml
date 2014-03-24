@@ -1,4 +1,4 @@
-<!-- From: file:/C:/Users/Kristian/AndroidStudioProjects/Bensinkalkulator/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.gruppe16.bensinkalkulator">
+<!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.gruppe16.bensinkalkulator">
 
     <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="18"/>
 
