@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/values-v11/colors.xml -->
+    <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-v11/colors.xml -->
     <eat-comment />
 
     <color name="backgroundcolor">#282828</color>
     <color name="formColor">#ffffff</color>
     <color name="textColor">#ffffff</color>
-    <!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/values-v11/strings.xml -->
+    <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-v11/strings.xml -->
     <eat-comment />
 
     <string name="app_name">Fuel Calculator</string>
@@ -18,7 +18,7 @@
     <string name="tenKm">/10km</string>
     <string name="toggleButtonOff">Start</string>
     <string name="toggleButtonOn">Driving</string>
-    <!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/values-v11/styles.xml -->
+    <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-v11/styles.xml -->
     <eat-comment />
 
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light">

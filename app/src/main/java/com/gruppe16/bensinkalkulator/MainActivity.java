@@ -56,9 +56,7 @@ public class MainActivity extends Activity {
         TripsDataSource datasource;
         datasource = new TripsDataSource(this);
         datasource.open();
-        @SuppressWarnings("unchecked")
-        String trip = new String("23.08.1991 kl 14:02 - 23km - 202kr");
-        datasource.createTrip(trip);
+        datasource.createTrip("23.08.1991 kl 14:01","202","23");
     }
     public void removeAll(View view) {
         TripsDataSource datasource;

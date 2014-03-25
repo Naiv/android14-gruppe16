@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/values-sw600dp/colors.xml -->
+    <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-sw600dp/colors.xml -->
     <eat-comment />
 
     <color name="backgroundcolor">#282828</color>
     <color name="formColor">#ffffff</color>
     <color name="textColor">#ffffff</color>
-    <!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/values-sw600dp/strings.xml -->
+    <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-sw600dp/strings.xml -->
     <eat-comment />
 
     <string name="app_name">Fuel Calculator</string>

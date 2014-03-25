@@ -17,7 +17,7 @@ public class TripsDataSource {
     private SQLiteDatabase database;
     private MySQLiteHelper dbHelper;
     private String[] allColumns = { MySQLiteHelper.COLUMN_ID,
-            MySQLiteHelper.COLUMN_TRIPS};
+            MySQLiteHelper.COLUMN_DATETIME, MySQLiteHelper.COLUMN_COST, MySQLiteHelper.COLUMN_DISTANCE};
 
     public TripsDataSource(Context context) {
         dbHelper = new MySQLiteHelper(context);
@@ -31,9 +31,11 @@ public class TripsDataSource {
         dbHelper.close();
     }
 
-    public Trip createTrip(String trip) {
+    public Trip createTrip(String datetime, String cost, String distance) {
         ContentValues values = new ContentValues();
-        values.put(MySQLiteHelper.COLUMN_TRIPS, trip);
+        values.put(MySQLiteHelper.COLUMN_DATETIME, datetime);
+        values.put(MySQLiteHelper.COLUMN_COST, cost);
+        values.put(MySQLiteHelper.COLUMN_DISTANCE, distance);
         long insertId = database.insert(MySQLiteHelper.TABLE_TRIPS, null,
                 values);
         Cursor cursor = database.query(MySQLiteHelper.TABLE_TRIPS,
@@ -77,7 +79,9 @@ public class TripsDataSource {
     private Trip cursorToTrip(Cursor cursor) {
         Trip trip = new Trip();
         trip.setId(cursor.getLong(0));
-        trip.setTrip(cursor.getString(1));
+        trip.setDatetime(cursor.getString(1));
+        trip.setCost(cursor.getString(2));
+        trip.setDistance(cursor.getString(3));
         return trip;
     }
 }

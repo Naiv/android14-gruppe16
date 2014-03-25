@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/values-sw720dp-land/colors.xml -->
+    <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-sw720dp-land/colors.xml -->
     <eat-comment />
 
     <color name="backgroundcolor">#282828</color>
     <color name="formColor">#ffffff</color>
     <color name="textColor">#ffffff</color>
-    <!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/values-sw720dp-land/dimens.xml -->
+    <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-sw720dp-land/dimens.xml -->
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">128dp</dimen>
-    <!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/values-sw720dp-land/strings.xml -->
+    <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-sw720dp-land/strings.xml -->
     <eat-comment />
 
     <string name="fuelConsumption">Fuel Consumption/10km</string>
