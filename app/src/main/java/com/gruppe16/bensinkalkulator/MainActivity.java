@@ -45,15 +45,6 @@ public class MainActivity extends Activity {
         };
         actionBar.addTab(actionBar.newTab().setText("Drive").setTabListener(tabListener));
         actionBar.addTab(actionBar.newTab().setText("Log").setTabListener(tabListener));
-<<<<<<< HEAD
-=======
-	}
-    public void addDummy(View view) {
-        TripsDataSource datasource;
-        datasource = new TripsDataSource(this);
-        datasource.open();
-        datasource.createTrip("23.08.1991 kl 14:01","202","23");
->>>>>>> c5d27ba699e3df585172e9c4ba5ed865c712c3f5
     }
 
     @Override

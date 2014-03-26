@@ -31,11 +31,7 @@ public class TripsDataSource {
         dbHelper.close();
     }
 
-<<<<<<< HEAD
     public Trip createTrip(String datetime, long cost, long distance) {
-=======
-    public Trip createTrip(String datetime, String cost, String distance) {
->>>>>>> c5d27ba699e3df585172e9c4ba5ed865c712c3f5
         ContentValues values = new ContentValues();
         values.put(MySQLiteHelper.COLUMN_DATETIME, datetime);
         values.put(MySQLiteHelper.COLUMN_COST, cost);
@@ -84,13 +80,8 @@ public class TripsDataSource {
         Trip trip = new Trip();
         trip.setId(cursor.getLong(0));
         trip.setDatetime(cursor.getString(1));
-<<<<<<< HEAD
         trip.setCost(cursor.getLong(2));
         trip.setDistance(cursor.getLong(3));
-=======
-        trip.setCost(cursor.getString(2));
-        trip.setDistance(cursor.getString(3));
->>>>>>> c5d27ba699e3df585172e9c4ba5ed865c712c3f5
         return trip;
     }
 }

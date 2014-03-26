@@ -7,7 +7,6 @@
     <color name="backgroundcolor">#282828</color>
     <color name="formColor">#ffffff</color>
     <color name="textColor">#ffffff</color>
-<<<<<<< HEAD
     <!-- From: file:/D:/Projects/bensin/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values-sw600dp/values.xml -->
     <eat-comment />
 
@@ -20,8 +19,6 @@
     <dimen name="abc_config_prefDialogWidth">580dp</dimen>
 
     <integer name="abc_max_action_buttons">5</integer>
-=======
->>>>>>> c5d27ba699e3df585172e9c4ba5ed865c712c3f5
     <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-sw600dp/strings.xml -->
     <eat-comment />
 

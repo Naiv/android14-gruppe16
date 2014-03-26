@@ -7495,21 +7495,18 @@ false
                 qualifiers=""
                 type="layout" />
             <file
-<<<<<<< HEAD
                 name="menu"
                 path="D:\Projects\bensin\app\src\main\res\menu\menu.xml"
                 qualifiers=""
                 type="menu" />
             <file
-=======
->>>>>>> c5d27ba699e3df585172e9c4ba5ed865c712c3f5
                 path="D:\Projects\bensin\app\src\main\res\values\colors.xml"
                 qualifiers="" >
                 <color name="backgroundcolor" >#282828
                 </color>
-                <color name="formColor" >#ffffff
-                </color>
                 <color name="textColor" >#ffffff
+                </color>
+                <color name="formColor" >#ffffff
                 </color>
             </file>
             <file
@@ -7525,23 +7522,21 @@ false
                 qualifiers="" >
                 <string name="fuelCost" >Fuel Cost
                 </string>
-                <string name="tenKm" >/10km
-                </string>
                 <string name="fuelConsumption" >Consumption
                 </string>
-                <string name="passengers" >Passengers
+                <string name="tenKm" >/10km
                 </string>
                 <string name="toggleButtonOff" >Start
                 </string>
+                <string name="passengers" >Passengers
+                </string>
                 <string name="liter" >/l
+                </string>
+                <string name="app_name" >Fuel Calculator
                 </string>
                 <string name="toggleButtonOn" >Driving
                 </string>
-<<<<<<< HEAD
                 <string name="emptyLog" >Empty Log
-=======
-                <string name="app_name" >Fuel Calculator
->>>>>>> c5d27ba699e3df585172e9c4ba5ed865c712c3f5
                 </string>
             </file>
             <file
@@ -7587,21 +7582,21 @@ false
                 </string>
                 <string name="fuelCost" >Fuel Cost
                 </string>
-                <string name="passengers" >Passengers
-                </string>
                 <string name="toggleButtonOff" >Start
                 </string>
-                <string name="fuelConsumption" >Consumption
+                <string name="passengers" >Passengers
                 </string>
                 <string name="toggleButtonOn" >Driving
+                </string>
+                <string name="fuelConsumption" >Consumption
                 </string>
             </file>
             <file
                 path="D:\Projects\bensin\app\src\main\res\values-sw720dp-land\colors.xml"
                 qualifiers="sw720dp-land" >
-                <color name="textColor" >#ffffff
-                </color>
                 <color name="backgroundcolor" >#282828
+                </color>
+                <color name="textColor" >#ffffff
                 </color>
                 <color name="formColor" >#ffffff
                 </color>
@@ -7621,13 +7616,13 @@ false
                 </string>
                 <string name="toggleButtonOn" >Driving
                 </string>
-                <string name="liter" >/l
-                </string>
                 <string name="fuelCost" >Fuel Cost/l
                 </string>
-                <string name="fuelConsumption" >Fuel Consumption/10km
+                <string name="liter" >/l
                 </string>
                 <string name="toggleButtonOff" >Start
+                </string>
+                <string name="fuelConsumption" >Fuel Consumption/10km
                 </string>
             </file>
             <file
@@ -7647,17 +7642,17 @@ false
                 </string>
                 <string name="tenKm" >/10km
                 </string>
-                <string name="toggleButtonOn" >Driving
-                </string>
                 <string name="app_name" >Fuel Calculator
                 </string>
-                <string name="liter" >/l
+                <string name="toggleButtonOn" >Driving
                 </string>
                 <string name="toggleButtonOff" >Start
                 </string>
-                <string name="passengers" >Passengers
+                <string name="liter" >/l
                 </string>
                 <string name="fuelCost" >Fuel Cost
+                </string>
+                <string name="passengers" >Passengers
                 </string>
             </file>
             <file
@@ -7684,13 +7679,13 @@ false
             <file
                 path="D:\Projects\bensin\app\src\main\res\values-v14\strings.xml"
                 qualifiers="v14" >
-                <string name="liter" >/l
-                </string>
                 <string name="toggleButtonOff" >Start
                 </string>
-                <string name="passengers" >Passengers
+                <string name="liter" >/l
                 </string>
                 <string name="fuelConsumption" >Consumption
+                </string>
+                <string name="passengers" >Passengers
                 </string>
                 <string name="toggleButtonOn" >Driving
                 </string>

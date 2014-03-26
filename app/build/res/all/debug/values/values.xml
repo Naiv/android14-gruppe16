@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<<<<<<< HEAD
     <!-- From: file:/D:/Projects/bensin/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values/values.xml -->
     <eat-comment />
 
@@ -79,15 +78,12 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-=======
->>>>>>> c5d27ba699e3df585172e9c4ba5ed865c712c3f5
     <!-- From: file:/D:/Projects/bensin/app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="backgroundcolor">#282828</color>
     <color name="formColor">#ffffff</color>
     <color name="textColor">#ffffff</color>
-<<<<<<< HEAD
     <!-- From: file:/D:/Projects/bensin/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values/values.xml -->
     <eat-comment />
 
@@ -494,14 +490,11 @@
     <dimen name="abc_panel_menu_list_width">296dp</dimen>
     <dimen name="abc_search_view_preferred_width">320dip</dimen>
     <dimen name="abc_search_view_text_min_width">160dip</dimen>
-=======
->>>>>>> c5d27ba699e3df585172e9c4ba5ed865c712c3f5
     <!-- From: file:/D:/Projects/bensin/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-<<<<<<< HEAD
     <!-- From: file:/D:/Projects/bensin/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values/values.xml -->
     <eat-comment />
 
@@ -527,8 +520,6 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-=======
->>>>>>> c5d27ba699e3df585172e9c4ba5ed865c712c3f5
     <!-- From: file:/D:/Projects/bensin/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
