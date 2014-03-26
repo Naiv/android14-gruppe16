@@ -12,4 +12,4 @@
         android:textColor="@color/textColor"
         android:textSize="18dp"
         android:text="23.08.1991 kl 14:02 - 23km - 202kr" />
-</LinearLayout><!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/layout/fragment_log.xml -->
+</LinearLayout><!-- From: file:/D:/Projects/bensin/app/src/main/res/layout/fragment_log.xml -->

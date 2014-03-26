@@ -6,9 +6,10 @@ android {
 
     defaultConfig {
         minSdkVersion 11
-        targetSdkVersion 18
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
     }
-
     buildTypes {
         release {
             runProguard false
@@ -18,5 +19,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:+'
+    compile 'com.android.support:appcompat-v7:+'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Fuel Calculator</string><string name="toggleButtonOn">Driving</string><string name="toggleButtonOff">Start</string><string name="fuelCost">Fuel Cost</string><string name="fuelConsumption">Consumption</string><string name="passengers">Passengers</string><string name="liter">/l</string><string name="tenKm">/10km</string>
+    <string name="app_name">Fuel Calculator</string><string name="toggleButtonOn">Driving</string><string name="toggleButtonOff">Start</string><string name="fuelCost">Fuel Cost</string><string name="fuelConsumption">Consumption</string><string name="passengers">Passengers</string><string name="liter">/l</string><string name="tenKm">/10km</string><string name="emptyLog">Empty Log</string>
 
 </resources>

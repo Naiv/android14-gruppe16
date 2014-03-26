@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/values-v11/colors.xml -->
+    <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-v11/colors.xml -->
     <eat-comment />
 
     <color name="backgroundcolor">#282828</color>
     <color name="formColor">#ffffff</color>
     <color name="textColor">#ffffff</color>
-    <!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/values-v11/strings.xml -->
+    <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-v11/strings.xml -->
     <eat-comment />
 
     <string name="app_name">Fuel Calculator</string>
@@ -18,11 +18,41 @@
     <string name="tenKm">/10km</string>
     <string name="toggleButtonOff">Start</string>
     <string name="toggleButtonOn">Driving</string>
-    <!-- From: file:/D:/Projects/bensinkalkulator/app/src/main/res/values-v11/styles.xml -->
+    <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-v11/styles.xml -->
     <eat-comment />
 
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
         <!-- API 11 theme customizations can go here. -->
     </style>
+    <!-- From: file:/D:/Projects/bensin/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values-v11/values.xml -->
+    <eat-comment />
+
+    <style name="Theme.Base" parent="android:Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <!-- Attributes populated from the framework to be read by apps -->
+        <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Theme.Base.Light" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <!-- Attributes populated from the framework to be read by apps -->
+        <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Widget.AppCompat.Base.AutoCompleteTextView" parent="android:Widget.Holo.AutoCompleteTextView" />
+
+    <style name="Widget.AppCompat.Base.ProgressBar" parent="android:Widget.Holo.ProgressBar" />
+
+    <style name="Widget.AppCompat.Base.ProgressBar.Horizontal" parent="android:Widget.Holo.ProgressBar.Horizontal" />
+
+    <style name="Widget.AppCompat.Light.Base.AutoCompleteTextView" parent="android:Widget.Holo.Light.AutoCompleteTextView" />
 
 </resources>
