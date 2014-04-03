@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/backgroundcolor">
 
+<<<<<<< HEAD
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,4 +38,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="25dp" />
+=======
+>>>>>>> 5e4e96e1514354991a99aa6945c4bc82e4aa039a
 </LinearLayout><!-- From: file:/D:/Projects/bensin/app/src/main/res/layout/fragment_main_track.xml -->

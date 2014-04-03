@@ -1,9 +1,12 @@
 <!-- From: file:/D:/Projects/bensin/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.gruppe16.bensinkalkulator">
 
     <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="19"/>
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+=======
+>>>>>>> 5e4e96e1514354991a99aa6945c4bc82e4aa039a
 
     <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
         <activity android:label="@string/app_name" android:name="com.gruppe16.bensinkalkulator.MainActivity">

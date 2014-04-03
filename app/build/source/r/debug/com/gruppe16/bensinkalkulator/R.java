@@ -877,10 +877,16 @@ containing a value of this type.
         public static final int default_activity_button=0x7f070028;
         public static final int dialog=0x7f070012;
         public static final int disableHome=0x7f070008;
+<<<<<<< HEAD
         public static final int driven=0x7f07004b;
         public static final int dropdown=0x7f070013;
         public static final int edit_query=0x7f070030;
         public static final int emptyLog=0x7f07004c;
+=======
+        public static final int dropdown=0x7f070013;
+        public static final int edit_query=0x7f070030;
+        public static final int emptyLog=0x7f070049;
+>>>>>>> 5e4e96e1514354991a99aa6945c4bc82e4aa039a
         public static final int end=0x7f07000c;
         public static final int expand_activities_button=0x7f070026;
         public static final int expanded_menu=0x7f07002c;
@@ -926,8 +932,11 @@ containing a value of this type.
         public static final int split_action_bar=0x7f07001e;
         public static final int submit_area=0x7f070039;
         public static final int tabMode=0x7f070002;
+<<<<<<< HEAD
         public static final int textView=0x7f070049;
         public static final int textView2=0x7f07004a;
+=======
+>>>>>>> 5e4e96e1514354991a99aa6945c4bc82e4aa039a
         public static final int title=0x7f07002b;
         public static final int toggleButton=0x7f07003f;
         public static final int top_action_bar=0x7f070020;

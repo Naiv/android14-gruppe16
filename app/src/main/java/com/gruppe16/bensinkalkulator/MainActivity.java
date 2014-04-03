@@ -11,7 +11,10 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.location.LocationManager;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.provider.Settings;
+=======
+>>>>>>> 5e4e96e1514354991a99aa6945c4bc82e4aa039a
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -58,6 +61,7 @@ public class MainActivity extends Activity {
         };
         actionBar.addTab(actionBar.newTab().setText("Drive").setTabListener(tabListener));
         actionBar.addTab(actionBar.newTab().setText("Log").setTabListener(tabListener));
+<<<<<<< HEAD
     }
 
     @Override
@@ -135,5 +139,35 @@ public class MainActivity extends Activity {
 
         }
 
+=======
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.emptyLog) {
+            FragmentLog.datasource = new TripsDataSource(this);
+            FragmentLog.datasource.open();
+            FragmentLog.datasource.deleteAll();
+            FragmentLog.datasource.close();
+            FragmentLog.adapter.clear();
+            FragmentLog.adapter.notifyDataSetChanged();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void addDummy(View view) {
+        FragmentLog.datasource = new TripsDataSource(this);
+        FragmentLog.datasource.open();
+        FragmentLog.datasource.createTrip("23.08.1991 kl 14:01", 202, 23);
+        FragmentLog.datasource.close();
+>>>>>>> 5e4e96e1514354991a99aa6945c4bc82e4aa039a
     }
 }
