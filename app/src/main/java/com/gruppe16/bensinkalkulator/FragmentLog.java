@@ -7,7 +7,8 @@ import android.widget.ArrayAdapter;
 import java.util.List;
 
 public class FragmentLog extends ListFragment {
-    private TripsDataSource datasource;
+    public static TripsDataSource datasource;
+    public static ArrayAdapter<Trip> adapter;
 
     //mulig redundant
     public static FragmentLog newInstance() {
@@ -17,13 +18,16 @@ public class FragmentLog extends ListFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
+        fillList();
+    }
+    public void fillList(){
         datasource = new TripsDataSource(getActivity());
         datasource.open();
 
         List<Trip> values = datasource.getAllTrips();
-        ArrayAdapter<Trip> adapter = new ArrayAdapter<Trip>(getActivity(),R.layout.fragment_log,R.id.listText, values);
+        adapter = new ArrayAdapter<Trip>(getActivity(),R.layout.fragment_log,R.id.listText, values);
         setListAdapter(adapter);
+        datasource.close();
     }
 }
 
