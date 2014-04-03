@@ -5,7 +5,9 @@ package com.gruppe16.bensinkalkulator;
  */
 public class Trip {
     private long id;
-    private String trip;
+    private String datetime;
+    private long cost;
+    private long distance;
 
     public long getId() {
         return id;
@@ -15,16 +17,34 @@ public class Trip {
         this.id = id;
     }
 
-    public String getTrip() {
-        return trip;
+    public String getDatetime() {
+        return datetime;
     }
 
-    public void setTrip(String trip) {
-        this.trip = trip;
+    public void setDatetime(String datetime) {
+        this.datetime = datetime;
     }
+
+    public long getCost() {
+        return cost;
+    }
+
+    public void setCost(long cost) {
+        this.cost = cost;
+    }
+
+    public long getDistance() {
+        return distance;
+    }
+
+    public void setDistance(long distance) {
+        this.distance = distance;
+    }
+
 
     @Override
     public String toString() {
-        return trip;
+        return datetime+" - "+Long.toString(distance)+"km "+Long.toString(cost)+",-";
     }
+
 }
