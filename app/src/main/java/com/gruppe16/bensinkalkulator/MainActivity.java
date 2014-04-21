@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -15,21 +16,30 @@ import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MainActivity extends Activity {
-    float distance;
+    public static EditText textSetConsumption;
+    public static EditText textSetFuelCost;
+    public static EditText textSetPassengers;
+    public static float finalCost = 0;
+    public static float finalDistance = 0;
+    ProgressDialog ringProgressDialog;
+
     GpsReceiver gpsReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         final ActionBar actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
@@ -75,17 +85,12 @@ public class MainActivity extends Activity {
             FragmentLog.datasource.open();
             FragmentLog.datasource.deleteAll();
             FragmentLog.datasource.close();
-            FragmentLog.adapter.clear();
-            FragmentLog.adapter.notifyDataSetChanged();
+            if (FragmentLog.adapter != null) {
+                FragmentLog.adapter.clear();
+                FragmentLog.adapter.notifyDataSetChanged();
+            }
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void addDummy(View view) {
-        FragmentLog.datasource = new TripsDataSource(this);
-        FragmentLog.datasource.open();
-        FragmentLog.datasource.createTrip("23.08.1991 kl 14:01", 202, 23);
-        FragmentLog.datasource.close();
     }
 
     public void onToggleTracking(View view) {
@@ -100,11 +105,17 @@ public class MainActivity extends Activity {
                 ((ToggleButton) view).setChecked(false);
                 return;
             }
+            ringProgressDialog = ProgressDialog.show(this, "Please wait ...", "Finding position ...", true);
             FragmentManager fm = getFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
             Fragment fr = new FragmentMainTrack();
             fragmentTransaction.replace(R.id.myFragMain, fr);
             fragmentTransaction.commit();
+
+            //TODO: Check for null
+            textSetConsumption = (EditText) findViewById(R.id.fuelConValue);
+            textSetFuelCost = (EditText) findViewById(R.id.fuelCostPrice);
+            textSetPassengers = (EditText) findViewById(R.id.passNum);
 
             Intent intent = new Intent(MainActivity.this, GpsService.class);
             gpsReceiver = new GpsReceiver();
@@ -113,6 +124,16 @@ public class MainActivity extends Activity {
             registerReceiver(gpsReceiver, intentFilter);
             startService(intent);
         } else {
+            ToggleButton tb = (ToggleButton) findViewById(R.id.toggleButton);
+            tb.setVisibility(View.GONE);
+            Button b1 = (Button) findViewById(R.id.newTrip);
+            b1.setVisibility(View.VISIBLE);
+            FragmentLog.datasource = new TripsDataSource(this);
+            Date d = new Date();
+            String finalDate = new SimpleDateFormat("dd MMM yyyy HH:mm").format(d);
+            FragmentLog.datasource.open();
+            FragmentLog.datasource.createTrip(finalDate, Math.round(finalDistance), Math.round(finalCost));
+            FragmentLog.datasource.close();
             Intent intent = new Intent(MainActivity.this, GpsService.class);
             stopService(intent);
             //gpsReceiver = new GpsReceiver();
@@ -120,19 +141,56 @@ public class MainActivity extends Activity {
         }
     }
 
+    public void newTrip(View view) {
+        ToggleButton tb = (ToggleButton) findViewById(R.id.toggleButton);
+        tb.setVisibility(View.VISIBLE);
+        Button b1 = (Button) findViewById(R.id.newTrip);
+        b1.setVisibility(View.GONE);
+
+        Fragment fr = new FragmentMainNew();
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+        fragmentTransaction.replace(R.id.myFragMain, fr);
+        fragmentTransaction.commit();
+    }
+
     private class GpsReceiver extends BroadcastReceiver {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            NumberFormat format = NumberFormat.getNumberInstance();
-            format.setMinimumFractionDigits(2);
-            format.setMaximumFractionDigits(2);
-            distance = intent.getFloatExtra("DISTANCE_PASSED", 0);
-            String strDistance = format.format(distance/1000);
-            TextView t=(TextView)findViewById(R.id.driven);
-            t.setText("Driven: "+strDistance+"km");
-            //Toast.makeText(MainActivity.this, Float.toString(distance), Toast.LENGTH_LONG).show();
+            ringProgressDialog.dismiss();
+            float distance = (intent.getFloatExtra("DISTANCE_PASSED", 0) / 1000);
 
+            float currentDistance = changeDecimals(distance, 2);
+            float currentConsumption = (currentDistance / 10) * Float.parseFloat(MainActivity.textSetConsumption.getText().toString());
+            float currentTotalCost = (currentConsumption * Float.parseFloat(MainActivity.textSetFuelCost.getText().toString()));
+            int passengers = Integer.parseInt(MainActivity.textSetPassengers.getText().toString());
+            float currentPersonCost = currentTotalCost / passengers;
+
+            TextView textDriven = (TextView) findViewById(R.id.distanceNow);
+            TextView textConsumption = (TextView) findViewById(R.id.fuelConsumptionNow);
+            TextView textTotalCost = (TextView) findViewById(R.id.fuelCostTotalNow);
+            TextView textPersonCost = (TextView) findViewById(R.id.fuelCostPersonNow);
+            TextView textPassengers = (TextView) findViewById(R.id.passengersNow);
+            textDriven.setText("Driven: " + currentDistance + "km");
+            textConsumption.setText("Consumption: " + changeDecimals(currentConsumption, 2) + "L");
+            textTotalCost.setText("Cost: " + changeDecimals(currentTotalCost, 2) + ",-");
+            textPersonCost.setText("Individual cost: " + changeDecimals(currentPersonCost, 2) + ",-");
+            textPassengers.setText("Passengers: " + passengers);
+            //Toast.makeText(MainActivity.this, Float.toString(distance), Toast.LENGTH_LONG).show();
+            finalDistance = currentDistance;
+            finalCost = changeDecimals(currentTotalCost, 2);
+
+        }
+
+        //setter antall desimaler og erstatter komma med punktum
+        public float changeDecimals(float number, int decimals) {
+            NumberFormat format = NumberFormat.getNumberInstance();
+            format.setMinimumFractionDigits(decimals);
+            format.setMaximumFractionDigits(decimals);
+            String strNumber = format.format(number);
+            strNumber = strNumber.replace(',', '.');
+            return Float.parseFloat(strNumber);
         }
 
     }

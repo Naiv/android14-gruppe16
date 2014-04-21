@@ -11,13 +11,20 @@
     <eat-comment />
 
     <string name="app_name">Fuel Calculator</string>
+    <string name="consumptionNow">Consumption: 0.0L</string>
+    <string name="distanceDrivenNow">Driven 0.0km</string>
+    <string name="emptyLog">Empty Log</string>
     <string name="fuelConsumption">Consumption</string>
     <string name="fuelCost">Fuel Cost</string>
+    <string name="fuelCostPerson">Individual cost: 0,-</string>
+    <string name="fuelCostTotal">Cost: 0,-</string>
     <string name="liter">/l</string>
+    <string name="newTrip">New Trip</string>
     <string name="passengers">Passengers</string>
+    <string name="passengersTrip">Passengers: 1</string>
     <string name="tenKm">/10km</string>
     <string name="toggleButtonOff">Start</string>
-    <string name="toggleButtonOn">Driving</string>
+    <string name="toggleButtonOn">Stop</string>
     <!-- From: file:/D:/Projects/bensin/app/src/main/res/values-v14/styles.xml -->
     <eat-comment />
 

@@ -18,10 +18,10 @@
         android:layout_weight="0.24">
 
         <ToggleButton
-            android:layout_width="171dp"
-            android:layout_height="146dp"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
             android:id="@+id/toggleButton"
-            android:layout_gravity="center"
+            android:layout_gravity="center_horizontal|bottom"
             android:textSize="30dp"
             android:textOn="@string/toggleButtonOn"
             android:textOff="@string/toggleButtonOff"
@@ -30,12 +30,14 @@
             android:enabled="true" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="addDummy"
-            android:text="Add"
-            android:id="@+id/buttonDummy"
-            android:layout_gravity="right|bottom" />
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:onClick="newTrip"
+            android:textSize="30dp"
+            android:text="@string/newTrip"
+            android:id="@+id/newTrip"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal|bottom" />
 
     </FrameLayout>
 

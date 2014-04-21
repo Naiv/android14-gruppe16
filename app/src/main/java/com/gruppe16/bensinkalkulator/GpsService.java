@@ -77,7 +77,7 @@ public class GpsService extends Service {
     public void onCreate() {
         initializeLocationManager();
         //mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 5, mLocationListeners[1]);
-        mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 50, mLocationListeners[0]);
+        mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, mLocationListeners[0]);
     }
 
     @Override

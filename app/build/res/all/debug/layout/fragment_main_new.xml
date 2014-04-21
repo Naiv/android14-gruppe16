@@ -52,8 +52,8 @@
         android:id="@+id/fuelConNot"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/textColor"
-        android:layout_alignBottom="@+id/fuelConPrice"
-        android:layout_toRightOf="@+id/fuelConPrice"
+        android:layout_alignBottom="@+id/fuelConValue"
+        android:layout_toRightOf="@+id/fuelConValue"
         android:layout_marginLeft="5dp"
         android:layout_marginBottom="2dp" />
 
@@ -81,7 +81,7 @@
         android:selectAllOnFocus="true"
         android:textSize="20dp"
         android:gravity="center|right"
-        android:id="@+id/fuelConPrice"
+        android:id="@+id/fuelConValue"
         android:background="@color/formColor"
         android:text="0.78"
         android:layout_gravity="center_horizontal"
@@ -113,6 +113,6 @@
         android:background="@color/formColor"
         android:text="1"
         android:layout_alignTop="@+id/pass"
-        android:layout_alignLeft="@+id/fuelConPrice"
+        android:layout_alignLeft="@+id/fuelConValue"
         android:layout_toRightOf="@+id/pass" />
 </RelativeLayout><!-- From: file:/D:/Projects/bensin/app/src/main/res/layout/fragment_main_new.xml -->

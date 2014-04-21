@@ -10,11 +10,6 @@ public class FragmentLog extends ListFragment {
     public static TripsDataSource datasource;
     public static ArrayAdapter<Trip> adapter;
 
-    //mulig redundant
-    public static FragmentLog newInstance() {
-        return new FragmentLog();
-    }
-
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
