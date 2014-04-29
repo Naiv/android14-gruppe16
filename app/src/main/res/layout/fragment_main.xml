@@ -26,7 +26,6 @@
             android:textOn="@string/toggleButtonOn"
             android:textOff="@string/toggleButtonOff"
             android:onClick="onToggleTracking"
-            android:checked="false"
             android:enabled="true" />
 
         <Button

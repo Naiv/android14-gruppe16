@@ -1,8 +1,6 @@
 package com.gruppe16.bensinkalkulator;
 
-/**
- * Created by Mikael on 24.03.14.
- */
+//klasse som tar vare på all data fra én tur.
 public class Trip {
     private long id;
     private String datetime;

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 
 import java.util.List;
-
+//listFragment for fragment_log.xml
 public class FragmentLog extends ListFragment {
     public static TripsDataSource datasource;
     public static ArrayAdapter<Trip> adapter;
@@ -15,6 +15,7 @@ public class FragmentLog extends ListFragment {
         super.onActivityCreated(savedInstanceState);
         fillList();
     }
+    //bruker TripsDataSource for å hente ut turene fra databasen, og adapter til å fylle listFragmentet med.
     public void fillList(){
         datasource = new TripsDataSource(getActivity());
         datasource.open();

@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+//klasse som håndterer tilkoblingen til MySQLite
 public class MySQLiteHelper extends SQLiteOpenHelper {
 
     public static final String TABLE_TRIPS = "trips";
@@ -25,6 +26,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
     public MySQLiteHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
+
 
     @Override
     public void onCreate(SQLiteDatabase database) {

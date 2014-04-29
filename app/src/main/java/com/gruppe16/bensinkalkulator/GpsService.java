@@ -8,10 +8,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
 
-/**
- * Created by Mikael on 03.04.2014.
- */
-
+//service for å logge avstand kjørt ved bruk av GPS
 public class GpsService extends Service {
     final static String MY_DISTANCE = "MY_DISTANCE";
     private LocationManager mLocationManager = null;
@@ -25,17 +22,15 @@ public class GpsService extends Service {
             lastLoc = new Location(provider);
         }
 
+        //når posisjonen endrer seg, oppdateres avstanden kjørt i service og en intent med den nye avstanden blir sendt tilbake til appen.
         @Override
         public void onLocationChanged(Location location) {
             if (firstRun!=true){
                 distance += lastLoc.distanceTo(location);
                 Intent intent = new Intent();
                 intent.setAction(MY_DISTANCE);
-
                 intent.putExtra("DISTANCE_PASSED", distance);
-
                 sendBroadcast(intent);
-                //Toast.makeText(GpsService.this, Float.toString(distance), 3000).show();
             }
             else {
                 firstRun=false;
@@ -57,9 +52,9 @@ public class GpsService extends Service {
         }
     }
 
+    //bruker GPS for å finne posisjon. valgt å ikke bruke nettverk også, da dette viste seg å være VELDIG unøyaktig.
     LocationListener[] mLocationListeners = new LocationListener[]{
             new LocationListener(LocationManager.GPS_PROVIDER),
-            new LocationListener(LocationManager.NETWORK_PROVIDER)
     };
 
     @Override
@@ -73,13 +68,14 @@ public class GpsService extends Service {
         return START_STICKY;
     }
 
+    //posisjonen blir ansett som "ny" når den finner en som er over 10meter unna den forrige lagrede.
     @Override
     public void onCreate() {
         initializeLocationManager();
-        //mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 5, mLocationListeners[1]);
-        mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, mLocationListeners[0]);
+        mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 10, mLocationListeners[0]);
     }
 
+    //tømmer gamle posisjoner dersom servicen avsluttes
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -90,6 +86,7 @@ public class GpsService extends Service {
         }
     }
 
+    //starter opp LocationManager
     private void initializeLocationManager() {
         if (mLocationManager == null) {
             mLocationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
